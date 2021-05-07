@@ -1,0 +1,10 @@
+version: "3"
+services:
+  alpine-sdk:
+    container_name: alpine-sdk
+    hostname: alpine-sdk
+    build: .
+    image: oxr463/alpine-sdk:latest
+    volumes:
+      - ~/src/aports/:/home/abuild/aports
+

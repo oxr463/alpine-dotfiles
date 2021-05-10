@@ -1,4 +1,4 @@
-# .alpine-dotfiles
+# .alpine
 
 _Miscellaneous files to assist in maintaining Alpine Linux packages._
 
@@ -20,8 +20,8 @@ git pull --all
 ### Setup .alpine-dotfiles repository
 
 ```sh
-git clone https://github.com/oxr463/alpine-dotfiles.git ~/src/alpine-dotfiles
-cd ~/src/alpine-dotfiles
+git clone https://github.com/oxr463/alpine-dotfiles.git ~/.alpine
+cd ~/.alpine
 docker-compose up -d
 docker exec -it alpine-sdk /bin/sh
 ```

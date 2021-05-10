@@ -17,7 +17,7 @@ git remote add upstream https://gitlab.alpinelinux.org/alpine/aports.git
 git pull --all
 ```
 
-### Setup .alpine-dotfiles repository
+### Setup .alpine repository
 
 ```sh
 git clone https://github.com/oxr463/alpine-dotfiles.git ~/.alpine

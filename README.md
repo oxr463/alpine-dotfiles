@@ -10,7 +10,7 @@ _Miscellaneous files to assist in maintaining Alpine Linux packages._
 ### Clone aports repository
 
 ```sh
-mkdir ~/src
+mkdir -p ~/src
 git clone https://gitlab.alpinelinux.org/oxr463/aports.git ~/src/aports
 cd ~/src/aports
 git remote add upstream https://gitlab.alpinelinux.org/alpine/aports.git

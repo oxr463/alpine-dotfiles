@@ -22,10 +22,10 @@ git pull --all
 ```sh
 git clone https://github.com/oxr463/alpine-dotfiles.git ~/.alpine
 cd ~/.alpine
-docker-compose up -d
-docker exec -it alpine-sdk /bin/sh
+docker-compose run alpine-sdk /bin/sh
 ```
 
 ## License
 
 SPDX-License-Identifier: [0BSD](https://spdx.org/licenses/0BSD.html)
+

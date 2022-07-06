@@ -1,0 +1,14 @@
+image: oxr463/alpine-sdk:latest
+
+abump:
+  only:
+    - schedules
+  before_script:
+    - git clone https://gitlab.alpinelinux.org/oxr463/aports.git
+  script:
+    - |
+      cd aports
+      for package in $(get_repology_packages.py); do
+        bump_package.sh $package
+      done
+

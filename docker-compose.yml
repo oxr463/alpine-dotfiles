@@ -6,5 +6,6 @@ services:
     build: .
     image: oxr463/alpine-sdk:latest
     volumes:
+      - ~/.alpine/:/home/abuild/.alpine
       - ~/src/aports/:/home/abuild/aports
 

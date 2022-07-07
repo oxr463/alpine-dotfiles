@@ -16,5 +16,7 @@ class Repology(object):
 
     def get_package_version(self, package_name):
         _package = self.get_package(package_name)
-        return _package[0]['version']
+        _package_versions = len(_package)
+        _package_versions_sorted = sorted(_package, key=lambda v: v['version'])
+        return _package_versions_sorted[_package_versions - 1]['version']
 
